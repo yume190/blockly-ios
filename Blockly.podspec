@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Blockly'
   s.module_name      = 'Blockly'
-  s.version          = '1.2.2'
+  s.version          = '1.2.3'
   s.summary          = 'A library from Google for building visual programming editors.'
   s.description      = <<-DESC
   Blockly is a visual editor that allows users to write programs by plugging blocks together.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.screenshots      = ['https://google.github.io/blockly-ios/demo.gif']
 
   s.platform         = :ios, '10.0'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.requires_arc     = true
 
   s.source_files     = 'Sources/**/*'
@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
     'Resources/Localized/**/*.lproj/*']
 
   s.frameworks        = 'WebKit'
-  s.ios.dependency 'AEXML', '~> 4.1.0'
+  s.ios.dependency 'AEXML', '~> 4.6.0'
 
   s.pod_target_xcconfig = {
       # Enable whole-module-optimization for all builds except for Debug builds
